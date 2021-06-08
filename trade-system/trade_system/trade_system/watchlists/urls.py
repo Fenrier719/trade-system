@@ -7,5 +7,4 @@ from trade_system.watchlists.api.services import (
 router = DefaultRouter()
 router.register(r'watchlist', WatchListViewSet)
 app_name = "watchlists"
-urlpatterns = [
-              ] + router.urls
+urlpatterns = router.urls

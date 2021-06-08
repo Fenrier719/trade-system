@@ -8,5 +8,4 @@ router = DefaultRouter()
 
 router.register(r'items', ItemListViewSet)
 app_name = "items"
-urlpatterns = [
-              ] + router.urls
+urlpatterns = router.urls

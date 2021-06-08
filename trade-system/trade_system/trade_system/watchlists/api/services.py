@@ -2,8 +2,8 @@ from django.contrib.auth import get_user_model
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin, UpdateModelMixin
 from rest_framework.viewsets import GenericViewSet
 
-from .serializers import WatchlistItemSerialize
-from ..models import WatchlistItem
+from trade_system.watchlists.api.serializers import WatchlistItemSerialize
+from trade_system.watchlists.models import WatchlistItem
 
 User = get_user_model()
 

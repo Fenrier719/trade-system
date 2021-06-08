@@ -19,16 +19,6 @@ def find_sell_offer():
     return sell_offers
 
 
-def find_buyer():
-    buyers = [buyer.user for buyer in list(find_buy_offer())]
-    return buyers
-
-
-def find_seller():
-    sellers = [seller.user for seller in list(find_sell_offer())]
-    return sellers
-
-
 def change_item_quantity(buyer_item, seller_item, quantity):
     buyer_item.quantity = buyer_item.quantity + quantity
     buyer_item.save()

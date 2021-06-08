@@ -1,16 +1,15 @@
 from django.contrib.auth import get_user_model
+from rest_framework import response
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
-from trade_system.watchlists.models import Watchlist, WatchlistItem
-from rest_framework import response
-
-from .serializers import ItemSerializer
-from ..models import Item
+from trade_system.items.api.serializers import ItemSerializer
+from trade_system.items.models import Item
 from trade_system.offers.api.serializers import OfferCreateSerializer
 from trade_system.watchlists.api.serializers import WatchListSerializer
+from trade_system.watchlists.models import Watchlist, WatchlistItem
 
 User = get_user_model()
 

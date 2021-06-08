@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ..models import Item, Currency
+from trade_system.items.models import Item, Currency
 
 
 class CurrencySerializer(serializers.ModelSerializer):
@@ -24,5 +24,3 @@ class ItemSerializer(serializers.ModelSerializer):
             'currency',
             'details',
         )
-
-

@@ -1,10 +1,7 @@
 from rest_framework import serializers
-
-from ..models import Inventory, InventoryItem
-
-from trade_system.users.api.serializers import UserSerializer
-
+from trade_system.inventories.models import Inventory, InventoryItem
 from trade_system.items.api.serializers import ItemSerializer
+from trade_system.users.api.serializers import UserSerializer
 
 
 class InventorySerializer(serializers.ModelSerializer):
@@ -28,6 +25,3 @@ class InventoryListSerializer(serializers.ModelSerializer):
             'item',
             'quantity',
         )
-
-
-

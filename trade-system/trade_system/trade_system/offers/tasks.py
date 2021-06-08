@@ -1,7 +1,6 @@
 from celery import shared_task
 from django.contrib.auth import get_user_model
-
-from .models import Offer
+from trade_system.offers.models import Offer
 
 User = get_user_model()
 

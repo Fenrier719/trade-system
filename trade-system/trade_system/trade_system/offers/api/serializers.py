@@ -1,12 +1,8 @@
 from rest_framework import serializers
-
-from ..models import Offer
-
-from trade_system.users.api.serializers import UserSerializer
-
+from trade_system.inventories.models import InventoryItem
 from trade_system.items.api.serializers import ItemSerializer
 
-from trade_system.inventories.models import InventoryItem
+from trade_system.offers.models import Offer
 
 
 class OfferCreateSerializer(serializers.ModelSerializer):

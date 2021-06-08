@@ -2,8 +2,8 @@ from django.contrib.auth import get_user_model
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin, UpdateModelMixin
 from rest_framework.viewsets import GenericViewSet
 
-from .serializers import  InventoryListSerializer
-from ..models import InventoryItem
+from trade_system.inventories.api.serializers import InventoryListSerializer
+from trade_system.inventories.models import InventoryItem
 
 User = get_user_model()
 

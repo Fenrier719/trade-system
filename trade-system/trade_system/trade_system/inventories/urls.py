@@ -7,5 +7,4 @@ from trade_system.inventories.api.services import (
 router = DefaultRouter()
 router.register(r'inventory', InventoryViewSet)
 app_name = "inventories"
-urlpatterns = [
-              ] + router.urls
+urlpatterns = router.urls

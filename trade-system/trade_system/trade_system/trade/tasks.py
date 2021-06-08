@@ -1,9 +1,10 @@
 from celery import shared_task
 from django.contrib.auth import get_user_model
 from django.db import transaction
-
-from .selectors import *
-from ..inventories.models import InventoryItem, Inventory
+from trade_system.inventories.models import InventoryItem, Inventory
+from trade_system.trade.selectors import find_active_offers, find_buy_offer, find_sell_offer, create_trade, \
+    change_buyer_offer_quantity, change_seller_offer_quantity, change_users_deposit, \
+    change_item_quantity, buyer_offer_check, seller_offer_check
 
 User = get_user_model()
 

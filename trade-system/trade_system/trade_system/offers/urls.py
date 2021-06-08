@@ -7,6 +7,4 @@ from trade_system.offers.api.services import (
 router = DefaultRouter()
 router.register(r'offers', OfferViewSet)
 app_name = "offers"
-urlpatterns = [
-
-              ] + router.urls
+urlpatterns = router.urls
