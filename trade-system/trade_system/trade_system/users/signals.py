@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.db.models import signals
 from django.dispatch import receiver
 from trade_system.watchlists.models import Watchlist
-from trade_systme.inventories.models import Inventory
+from trade_system.inventories.models import Inventory
 
 from . import models
 
